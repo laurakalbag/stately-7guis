@@ -12,25 +12,21 @@ function App() {
     <>
       <div>
         <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+          <img src={viteLogo} className="logo" alt="Vite" />
         </a>
         <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          <img src={reactLogo} className="logo react" alt="React" />
         </a>
         <a href="https://stately.ai/docs/xstate" target="_blank">
-          <img src={xstateLogo} className="logo xstate" alt="XState logo" />
+          <img src={xstateLogo} className="logo xstate" alt="XState" />
         </a>
       </div>
-      <h1>Vite + React + XState + TS</h1>
+      <h1>7GUIs counter</h1>
+      <p>Using Vite + React + XState + TS.</p>
       <div className="card">
-      <button onClick={() => send({ type: 'INCREMENT' })}>count is {state.context.count}</button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test hot module reloading.
-        </p>
+      <p aria-live='polite'>Count is <strong>{state.context.count}</strong>.</p>
+      <p><button onClick={() => send({ type: 'INCREMENT' })}>Count</button></p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite, React, and XState logos to learn more.
-      </p>
     </>
   )
 }
