@@ -22,7 +22,7 @@ function App() {
         </a>
       </div>
       <h1>7GUIs counter</h1>
-      <p>Using Vite + React + XState + TS.</p>
+      <p>From the <a href="https://eugenkiss.github.io/7guis/tasks#counter">7GUIs Counter task</a>, using Vite + React + XState + TS.</p>
       <div className="card">
       <p aria-live='polite'>Count is <strong>{state.context.count}</strong>.</p>
       <p><button onClick={() => send({ type: 'INCREMENT' })}>Count</button></p>
