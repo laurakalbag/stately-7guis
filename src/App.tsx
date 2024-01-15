@@ -21,15 +21,15 @@ function App() {
           <img src={xstateLogo} className="logo xstate" alt="XState logo" />
         </a>
       </div>
-      <h1>Vite + React + XState</h1>
+      <h1>Vite + React + XState + TS</h1>
       <div className="card">
       <button onClick={() => send({ type: 'INCREMENT' })}>count is {state.context.count}</button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Edit <code>src/App.tsx</code> and save to test hot module reloading.
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite, React, and XState logos to learn more
+        Click on the Vite, React, and XState logos to learn more.
       </p>
     </>
   )
