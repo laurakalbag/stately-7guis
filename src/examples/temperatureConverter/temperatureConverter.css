@@ -1,0 +1,39 @@
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 0.2em;
+    padding: 0.2em;
+    text-align: left;
+}
+
+label:before {
+    content: "°";
+}
+
+input {
+    height: 1.5em;
+    padding: 0.2em;
+    margin: 0.2em;
+}
+
+div[aria-label="is equal to"] {
+    margin: 0.2em;
+    height: 1.45em;
+}
+
+    span.degrees {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
