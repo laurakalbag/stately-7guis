@@ -64,10 +64,47 @@ textarea:not([rows]) {
 /* Variables */
 
 :root {
-  --medium: 600;
+  --charcoal-00: #edf0f2;
+  --charcoal-01: #d4dce1;
+  --charcoal-02: #acb7bd;
+  --charcoal-03: #828b90;
+  --charcoal-04: #6f777c;
+  --charcoal-05: #646b6f;
+  --charcoal-06: #4f5558;
+  --charcoal-07: #3a3d41;
+  --charcoal-08: #2a2c32;
+  --charcoal-09: #1e1e27;
+  --charcoal-10: #0f0e13;
 
-  --background: #f1fafd;
-  --background-main: #fff;
+  --cadet-00: #f0eff5;
+  --cadet-01: #dbdae8;
+  --cadet-02: #b5b3ce;
+  --cadet-03: #8985b1;
+  --cadet-04: #7571a3;
+  --cadet-05: #696499;
+  --cadet-06: #534d85;
+  --cadet-07: #3c3861;
+  --cadet-08: #2c2849;
+  --cadet-09: #1e1c35;
+  --cadet-10: #0e0c1c;
+
+  --fairytale-00: #fdeff7;
+  --fairytale-01: #f9d4e9;
+  --fairytale-02: #f09fd0;
+  --fairytale-03: #dd7cb9;
+  --fairytale-04: #c05a9f;
+  --fairytale-05: #a34c86;
+  --fairytale-06: #8b376e;
+  --fairytale-07: #6a2552;
+  --fairytale-08: #51183e;
+  --fairytale-09: #3d0e2e;
+  --fairytale-10: #25041a;
+
+  --medium: 600;
+  --border-radius: 0.5em;
+
+  --background: var(--fairytale-01);
+  --background-main: var(--fairytale-00);
   --border: 1px dotted #404045;
   --text: #141416;
   --text-secondary: #545459;
@@ -79,14 +116,14 @@ textarea:not([rows]) {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #141416;
-    --background-main: #1c1c1e;
-    --border: 1px dotted #404045;
-    --text: #f1fafd;
-    --text-secondary: #bcc0c7;
-    --button-background: #2a2a2e;
-    --button-text: #f1fafd;
-    --button-border: 1px solid #333338;
+    --background: var(--cadet-10);
+    --background-main: var(--cadet-09);
+    --border: 1px dotted var(--cadet-08);
+    --text: var(--cadet-01);
+    --text-secondary: var(--cadet-02);
+    --button-background: var(--cadet-07);
+    --button-text: var(--cadet-01);
+    --button-border: 1px solid var(--cadet-06);
     --button-shadow: inset 0px 0 5px 0px rgba(0,0,0,0.4);
   }
 }
@@ -99,6 +136,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1em;
   line-height: 1.2;
+  margin: 0;
 }
 
 h1 {
@@ -109,7 +147,7 @@ h1 {
 button {
   background: var(--button-background);
   border: var(--button-border);
-  border-radius: 0.5em;
+  border-radius: var(--border-radius);
   box-shadow: var(--button-shadow);
   color: var(--button-text);
   font-weight: var(--medium);
@@ -144,7 +182,7 @@ header {
 }
 
 nav {
-  margin: 1em 0;
+  margin: 1.5em 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -154,5 +192,6 @@ nav {
 
 main {
   background: var(--background-main);
-  padding: 1em;
+  border-radius: var(--border-radius);
+  padding: 1em 1.5em 2.5em;
 }
