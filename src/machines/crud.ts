@@ -2,7 +2,7 @@ import { createMachine } from "xstate";
 
 export const machine = createMachine(
   {
-    /** @xstate-layout N4IgpgJg5mDOIC5QGMBOBXCA6AYgS1VgBcACAZSIEMiwBiAOzAA8iBtABgF1FQAHAe1h4iefvR4gmiAIwB2dlgBs7AJwAmFdICsAFmnSAzFpUAaEAE9Eag1i2yda6QA5ZWgL4ez9fhDgS0mBICQiJiElIIALQGilhq7A5qWoYGKroqTmaWUVpaWA52TtJJniAB2PiEpBTUYEGCwqLiSJIy0liyabL2TorKOlrsallWarb2ji7ubmblWGRgyGIQ5FQ09SFN4VYqsbLK9gbx9uz2IwhqY3YOzq4eHkA */
+    /** @xstate-layout N4IgpgJg5mDOIC5QGMBOBXCA6AEmVYA5LAAQCGJAZgJaqwAuJDZ9YAxAHZgAe9A2gAYAuolAAHAPaxq9ahI6iQ3RAA4ALFgCcANgGaAzAHYArABoQAT0THjWNdpUmAvi-McJEOIrSZFk6bLyisoIALRqKuZWYYYqriA+2HgExORUtAxM9CxgflIycgpISogCUaXxiVgAymDI8hAk1dmseQGFwYgATDpYhrqGavpdAoOjauUIXV1YxoNdAIyOxi4uQA */
     id: "crud",
     initial: "Here's a first state",
     states: {
