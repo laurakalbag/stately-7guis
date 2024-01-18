@@ -19,7 +19,7 @@ export const flightBookerMachine = createMachine(
     },
 
     types: { events: {} as { type: "next" } },
-    description: `Machine Two`
+    description: `Machine Three`
   },
   {
     actions: {},
