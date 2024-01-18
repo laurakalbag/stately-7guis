@@ -1,6 +1,6 @@
 import { createMachine } from "xstate";
 
-export const machine = createMachine(
+export const flightBookerMachine = createMachine(
   {
     /** @xstate-layout N4IgpgJg5mDOIC5QDMA2BLKALALgIQHsCBrMAJwDoAxdM2HAAgGUcBDHMAYgDswAPHAG0ADAF1EoAA4FY6HOgLcJIPogCMAdmEUAbMICcAJn1qArABY1agMyn9AGhABPRIesVTG84bUAODaYAvsGO3AQQcMpomLiEJOTK0rLyisqqCAC01joUhsLehqY21voW+r6OLpmmphTenr5qhSEg0dj4RKSUNHSMLOxgiTJyCkpIKupqFBqlGl6+OnrmpsKGla6GHl4+-kGBjm2xneQUTGAAxooQzGwcQ8mjaa76ORp6XtZ5XsJe6wiGm083j8AWCwSAA */
     id: "flightBooker",
