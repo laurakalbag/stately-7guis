@@ -1,5 +1,5 @@
 import { useMachine } from '@xstate/react';
-import { temperatureConverterMachine } from './temperatureConverterMachine';
+import { temperatureConverterMachine } from '../../machines/temperatureConverterMachine';
 import './temperatureConverter.css';
 
 export default function TemperatureConverter() {

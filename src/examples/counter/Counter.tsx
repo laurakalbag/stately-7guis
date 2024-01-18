@@ -1,5 +1,5 @@
 import { useMachine } from '@xstate/react';
-import { counterMachine } from './counterMachine';
+import { counterMachine } from '../../machines/counterMachine';
 import './counter.css';
 
 export default function Counter() {
