@@ -2,7 +2,7 @@ import { createMachine, assign } from "xstate";
 
 export const temperatureConverterMachine = createMachine(
   {
-    /** @xstate-layout N4IgpgJg5mDOIC5QBcwFsAOYBOBDZArtmAMID2AdgG46rYDEAYgIIASASgKIByrnAkgBUA2gAYAuolAYysAJbI5lKSAAeiALQAmAIwB2AHQBOABwmtJnVoCsAGhABPTVoDMB66L2WbAXx-3UTBx8IlJKGmw6ehJOABkAZX4AVXixSSQQGXlFZQz1BC0AFhMDUUKtIwA2Ez07R2c3Dy8raz9-EAoyCDgVQKw8QmJyalocFSyFJQoVfNF7JwRRNp8gA */
+    /** @xstate-layout N4IgpgJg5mDOIC5QBcwFsAOYBOBDZArtmAMID2AdgG46rYDEAYgIIASASgKIByrnAkgBUA2gAYAuolAYysAJbI5lKSAAeiALQAmLQGYAdAHYAjABYAHKd2GArABoQAT017958wDYT52wF9fDqiYOPhEpJQ02HT0JJwAMgDK-ACqCWKSSCAy8orKmeoIWh4GOkU2Hlr2Ti4G7l7GPjb+ASAUZBBwKkFYeITE5NS0OCrZCkoUKgWiDs4Ios2+QA */
     id: "temperatureConverter",
     on: {
       FAHRENHEIT: {
