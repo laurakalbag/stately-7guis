@@ -6,7 +6,7 @@ export const machine = createMachine(
     id: "flightBooker",
     initial: "First State",
     states: {
-      "First State": {
+      "A different state name": {
         on: {
           next: {
             target: "Second State",
