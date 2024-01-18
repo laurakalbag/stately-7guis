@@ -2,7 +2,7 @@ import { createMachine, assign } from "xstate";
 
 export const counterMachine = createMachine(
   {
-    /** @xstate-layout N4IgpgJg5mDOIC5QGMD2BXAdgFzAJwGIBJAOQGEAlAUQFkqSAVAbQAYBdRUAB1VgEtsfVJk4gAHogC0AJhYA6FiwDsADgCM0gKwAaEAE8pagCxG5StSqWaAvrd2ZUEOKLRZceUT36DhoiQhZdAwDbWyA */
+    /** @xstate-layout N4IgpgJg5mDOIC5QGMD2BXAdgFzAJwGIBJAOQGEAlAUQFkqSAVAbQAYBdRUAB1VgEtsfVJk4gAHogC0AJgBsAOmkBWAOwAOAIzKANCACeUrQGZ5Ro9JZGtSgL53dmVBDii0WXHlE9+g4aIkILLoGgXZ2QA */
     context: {
       count: 0,
     },
