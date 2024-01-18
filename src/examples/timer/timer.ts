@@ -2,7 +2,7 @@ import { createMachine } from "xstate";
 
 export const timer = createMachine(
   {
-    id: "flightBooker",
+    id: "timer",
 
     initial: "First State",
 
