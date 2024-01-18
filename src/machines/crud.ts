@@ -6,7 +6,7 @@ export const crudMachine = createMachine(
     id: "crud",
     initial: "First State",
     states: {
-      "First State": {
+      "Not a ghost": {
         on: {
           next: {
             target: "Second State",
