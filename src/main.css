@@ -61,70 +61,100 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+/* Fonts */
+
+@font-face {
+  font-family: "Spline";
+  font-weight: 100 1000;
+  font-style: normal;
+  src: local('Courier', monospace), url("./assets/spline.ttf") format("truetype-variations");
+}
+
+@font-face {
+  font-family: "Spline";
+  font-weight: 100 1000;
+  font-style: italic;
+  src: local('Courier', monospace), url("./assets/spline-.ttf") format("truetype-variations");
+}
+
 /* Variables */
 
 :root {
-  --charcoal-00: #edf0f2;
-  --charcoal-01: #d4dce1;
-  --charcoal-02: #acb7bd;
-  --charcoal-03: #828b90;
-  --charcoal-04: #6f777c;
-  --charcoal-05: #646b6f;
-  --charcoal-06: #4f5558;
-  --charcoal-07: #3a3d41;
-  --charcoal-08: #2a2c32;
-  --charcoal-09: #1e1e27;
-  --charcoal-10: #0f0e13;
+  --grey-50: #f6f8fa;
+  --grey-50-rgb: 246, 248, 250;
+  --grey-100: #eaeef2;
+  --grey-100-rgb: 234, 238, 242;
+  --grey-200: #d0d7de;
+  --grey-200-rgb: 208, 215, 222;
+  --grey-300: #afb8c1;
+  --grey-300-rgb: 175, 184, 193;
+  --grey-400: #8c959f;
+  --grey-400-rgb: 140, 149, 159;
+  --grey-500: #6e7781;
+  --grey-500-rgb: 110, 119, 129;
+  --grey-600: #57606a;
+  --grey-600-rgb: 87, 96, 107;
+  --grey-700: #424a53;
+  --grey-700-rgb: 66, 74, 83;
+  --grey-800: #32383f;
+  --grey-800-rgb: 49, 56, 63;
+  --grey-900: #24292f;
+  --grey-900-rgb: 36, 42, 47;
 
-  --cadet-00: #f0eff5;
-  --cadet-01: #dbdae8;
-  --cadet-02: #b5b3ce;
-  --cadet-03: #8985b1;
-  --cadet-04: #7571a3;
-  --cadet-05: #696499;
-  --cadet-06: #534d85;
-  --cadet-07: #3c3861;
-  --cadet-08: #2c2849;
-  --cadet-09: #1e1c35;
-  --cadet-10: #0e0c1c;
+  --pink-50: #ffeff7;
+  --pink-50-rgb: 255, 239, 247;
+  --pink-100: #ffd3eb;
+  --pink-100-rgb: 255, 211, 235;
+  --pink-200: #ffadda;
+  --pink-200-rgb: 255, 173, 218;
+  --pink-300: #ff80c8;
+  --pink-300-rgb: 255, 128, 200;
+  --pink-400: #e85aad;
+  --pink-400-rgb: 232, 90, 173;
+  --pink-500: #bf3989;
+  --pink-500-rgb: 191, 57, 137;
+  --pink-600: #99286e;
+  --pink-600-rgb: 153, 40, 110;
+  --pink-700: #772057;
+  --pink-700-rgb: 119, 32, 87;
+  --pink-800: #611347;
+  --pink-800-rgb: 97, 19, 71;
+  --pink-900: #4d0336;
+  --pink-900-rgb: 77, 6, 54;
 
-  --fairytale-00: #fdeff7;
-  --fairytale-01: #f9d4e9;
-  --fairytale-02: #f09fd0;
-  --fairytale-03: #dd7cb9;
-  --fairytale-04: #c05a9f;
-  --fairytale-05: #a34c86;
-  --fairytale-06: #8b376e;
-  --fairytale-07: #6a2552;
-  --fairytale-08: #51183e;
-  --fairytale-09: #3d0e2e;
-  --fairytale-10: #25041a;
+  --font-system: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-code: 'Spline', Courier, monospace;
 
   --medium: 600;
   --border-radius: 0.5em;
 
-  --background: var(--fairytale-01);
-  --background-main: var(--fairytale-00);
-  --border: 1px dotted #404045;
-  --text: #141416;
-  --text-secondary: #545459;
-  --button-background: #fff;
-  --button-text: #141416;
-  --button-border: 1px solid rgb(187, 187, 202);
-  --button-shadow: inset 0px 0 5px 0px rgba(187, 187, 202, .8);
+  --background: var(--grey-100);
+  --background-main: var(--grey-50);
+  --border-color: var(--grey-200);
+  --border: 1px solid var(--border-color);
+  --divider-color: var(--grey-100);
+  --divider: 1px solid var(--divider-color);
+  --text: var(--grey-800);
+  --text-secondary: var(--grey-700);
+  --button-background: var(--pink-400);
+  --button-background-highlight: var(--pink-500);
+  --button-text: var(--grey-50);
+  --button-border-color: var(--pink-500);
+  --button-border: 1px solid var(--button-border-color);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: var(--cadet-10);
-    --background-main: var(--cadet-09);
-    --border: 1px dotted var(--cadet-08);
-    --text: var(--cadet-01);
-    --text-secondary: var(--cadet-02);
-    --button-background: var(--cadet-07);
-    --button-text: var(--cadet-01);
-    --button-border: 1px solid var(--cadet-06);
-    --button-shadow: inset 0px 0 5px 0px rgba(0,0,0,0.4);
+    --background: var(--grey-900);
+    --background-main: var(--grey-800);
+    --border-color: var(--grey-700);
+    --divider-color: var(--grey-800);
+    --text: var(--grey-100);
+    --text-secondary: var(--grey-200);
+    --button-background: var(--pink-600);
+    --button-background-highlight: var(--pink-500);
+    --button-text: var(--grey-50);
+    --button-border-color: var(--pink-700);
   }
 }
 
@@ -133,10 +163,14 @@ textarea:not([rows]) {
 body {
   background-color: var(--background);
   color: var(--text);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--font-code);
   font-size: 1em;
-  line-height: 1.2;
+  line-height: 1.5;
   margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--medium);
 }
 
 h1 {
@@ -148,10 +182,21 @@ button {
   background: var(--button-background);
   border: var(--button-border);
   border-radius: var(--border-radius);
-  box-shadow: var(--button-shadow);
   color: var(--button-text);
   font-weight: var(--medium);
-  padding: 0.5em 1em;
+  padding: 0.3em 1em;
+}
+
+button:hover, button:active {
+  background: var(--button-background-highlight);
+}
+
+input {
+  border: var(--border);
+}
+
+pre, code {
+  font-family: var(--font-code);
 }
 
 .example {
@@ -171,8 +216,10 @@ button {
 }
 
 .description {
+  border-bottom: var(--divider);
   color: var(--text-secondary);
   margin: 1em 0 2em;
+  padding: 0 0 2em 0;
 }
 
 /* Header */
@@ -181,17 +228,36 @@ header {
   text-align: center;
 }
 
-nav {
-  margin: 1.5em 0;
+nav ul {
+  margin: 2em 0 1em;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  gap: 1em;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li:not(:last-child):after {
+  color: var(--border-color);
+  content: '|';
+}
+
+nav button {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: var(--text);
+}
+
+nav button:hover, nav button:active {
+  background: none;
+  color: var(--text-secondary);
 }
 
 main {
   background: var(--background-main);
+  border: var(--border);
   border-radius: var(--border-radius);
   padding: 1em 1.5em 2.5em;
 }

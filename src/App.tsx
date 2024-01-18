@@ -46,28 +46,32 @@ export default function App() {
   return (
     <div className="app">
       <header>
-        <h2>XState + React 7GUIs Examples</h2>
         <div className="tech">
-          <a href="https://vitejs.dev" target="_blank">
-            Vite
+          <a href="https://stately.ai/docs/xstate" target="_blank">
+            XState
           </a>
           <a href="https://react.dev" target="_blank">
             React
           </a>
-          <a href="https://stately.ai/docs/xstate" target="_blank">
-            XState
+          <a href="https://vitejs.dev" target="_blank">
+            Vite
           </a>
         </div>
+        <h2>XState + React 7GUIs Examples</h2>
         <nav>
+          <ul>
           {pages.map((p) => (
-            <button
-              key={p}
-              className={p === page ? 'app-active-page' : 'app-page'}
-              onClick={() => setPage(p)}
-            >
-              {p}
-            </button>
+            <li>
+              <button
+                key={p}
+                className={p === page ? 'app-active-page' : 'app-page'}
+                onClick={() => setPage(p)}
+              >
+                {p}
+              </button>
+            </li>
           ))}
+          </ul>
         </nav>
       </header>
       <main>
