@@ -1,11 +1,31 @@
-import { actorFromStately } from '@statelyai/sky';
-import { skyConfig } from './counterMachine.sky';
+import { createMachine, assign } from "xstate";
 
-export const counterMachine = actorFromStately(
+export const counterMachine = createMachine(
   {
-    apiKey: 'sta_67b85e94-f83d-4b88-8ef6-2250a15afc09',
-    url: 'https://sky.stately.ai/NNoyE8',
-    sessionId: 'shared-session',
+    /** @xstate-layout N4IgpgJg5mDOIC5QGMD2BXAdgFzAJwGIBJAOQGEAlAUQFkqSAVAbQAYBdRUAB1VgEtsfVJk4gAHogC0AJgBsAOmkBWAOwAOAIzKANCACeUrQGZ5Ro9JZGtSgL53dmVBDii0WXHlE9+g4aIkILLoGgXZ2QA */
+    context: {
+      count: 0,
+    },
+    id: "counter",
+    on: {
+      INCREMENT: {
+        target: "#counter",
+        actions: {
+          type: "increment",
+        },
+      },
+    },
+    types: {
+      events: {} as { type: "INCREMENT" },
+      context: {} as { count: number },
+    },
   },
-  skyConfig,
+  {
+    actions: {
+      increment: assign({ count: ({ context }) => context.count + 1 }),
+    },
+    actors: {},
+    guards: {},
+    delays: {},
+  },
 );
