@@ -1,33 +1,23 @@
-# React + TypeScript + Vite + XState
+# XState + React + TypeScript + Vite
 
-This template provides a minimal setup to get XState and React working in Vite with HMR and some ESLint rules.
+Examples based on 7GUIs using XState, React, TypeScript and Vite.
 
 ## Install
 
 `npm install`
 
-## Run
+## Run locally
 
 `npm run dev`
 
-## Expanding the ESLint configuration
+## Run build
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+`npm run build`
 
-- Configure the top-level `parserOptions` property like this:
+## Preview build locally
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
+`npm run preview`
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Push to to main (and deploy to to GitHub pages)
+
+`git push origin main`
