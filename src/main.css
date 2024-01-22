@@ -74,7 +74,7 @@ textarea:not([rows]) {
   font-family: "Spline";
   font-weight: 100 1000;
   font-style: italic;
-  src: local('Courier', monospace), url("./assets/spline-.ttf") format("truetype-variations");
+  src: local('Courier', monospace), url("./assets/spline-italic.ttf") format("truetype-variations");
 }
 
 /* Variables */

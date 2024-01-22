@@ -15,21 +15,21 @@
 }
 
 [href*="vitejs.dev"] {
-    background: url(./vite.svg) no-repeat 100%;
+    background: url(./assets/vite.svg) no-repeat 100%;
 }
 
 [href*="react.dev"] {
-    background: url(./react.svg) no-repeat 100%;
+    background: url(./assets/react.svg) no-repeat 100%;
 }
 
 [href*="stately.ai/docs/xstate"] {
-    background: url(./xstate.svg) no-repeat 100%;
+    background: url(./assets/xstate.svg) no-repeat 100%;
     background-size: 2.5em;
 }
 
 @media (prefers-color-scheme: dark) {
     [href*="stately.ai/docs/xstate"] {
-        background: url(./xstate-white.svg) no-repeat 100%;
+        background: url(./assets/xstate-white.svg) no-repeat 100%;
         background-size: 2.5em;
     }
 }
