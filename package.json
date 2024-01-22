@@ -1,15 +1,17 @@
 {
   "name": "stately-react-project",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sky": "xstate sky \"./src/**/*.ts?(x)\""
   },
   "dependencies": {
+    "@statelyai/sky": "^0.0.11",
+    "@statelyai/sky-react": "^0.0.11",
     "@xstate/react": "^4.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
