@@ -20,15 +20,15 @@ label:before {
 input {
     height: 1.5em;
     padding: 0.2em;
-    margin: 0.2em;
+    margin: 0.2em 0;
 }
 
 div[aria-label="is equal to"] {
     margin: 0.2em;
-    height: 1.45em;
+    height: 1.2em;
 }
 
-    span.degrees {
+span.degrees {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     height: 1px;

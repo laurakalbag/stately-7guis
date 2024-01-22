@@ -193,6 +193,8 @@ button:hover, button:active {
 
 input {
   border: var(--border);
+  margin: 0;
+  width: 100%;
 }
 
 pre, code {
