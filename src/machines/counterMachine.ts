@@ -1,5 +1,5 @@
-import { skyConfig } from "./counterMachine.sky";
 import { actorFromStately } from "@statelyai/sky";
+import { skyConfig } from "./counterMachine.sky";
 
 export const counterMachine = actorFromStately(
   {

@@ -1,9 +1,9 @@
 import { useMachine } from '@xstate/react';
-import { counterMachine } from '../../machines/counterMachine';
+import { skyConfig } from '../../machines/counterMachine.sky';
 import './counter.css';
 
 export default function Counter() {
-  const [state, send] = useMachine(counterMachine);
+  const [state, send] = useMachine(skyConfig.machine);
 
   return (
     <>
